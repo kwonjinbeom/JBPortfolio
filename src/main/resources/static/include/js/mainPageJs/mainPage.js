@@ -188,7 +188,7 @@ $(function(){
 	    }
 	})
 	$("#quicketDetailBtn").click(function(){
-		location.href = "/project/quicketDetailPage";
+		window.open("/project/quicketDetailPage");
 	})
 	
 	/* Certificate*/

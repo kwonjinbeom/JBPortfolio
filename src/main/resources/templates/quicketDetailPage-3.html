@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- css연결 -->   
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+ <!-- css연결 -->   
+	    <link rel = "stylesheet" href ="/include/css/detailPageCss/quicketDetailPage.css">  
+	    <script src="/include/js/detailPageJs/quicketDetailPage.js"></script>
+
+</head>
+		
+		
+		
+    	    
+<body>
+	<!-- 우측아래 로고 -->
+   	<!-- <img id="homeImage" src="/images/common/mainPageImage/homeIcon.png"/> -->
+	
+	
+	<header>
+		<div id="headerBox">
+       	<img class="logo" id="logoSub" src="/images/common/mainPageImage/jinbeomLogoSub.png"/>
+       	<div class="btn-group">
+		    <button id="navBtn" class="btn btn-link dropdown-toggle" type="button" data-toggle="dropdown">
+		    3. 요구사항 명세서
+		    <span class="caret"></span>
+		    </button>
+		    <ul class="dropdown-menu">
+				  <li><a class="dropdown-item active" href="/project/quicketDetailPage"aria-current="true">0. 프로젝트 소개</a></li>
+				  <li><a class="dropdown-item" href="/project/quicketDetailPage-1">1. 프로젝트 기획서</a></li>
+				  <li><a class="dropdown-item" href="/project/quicketDetailPage-2" >2. 요구사항 정의서</a></li>
+				  <li><a class="dropdown-item" href="/project/quicketDetailPage-3" >3. 요구사항 명세서</a></li>
+				  <li><a class="dropdown-item" href="/project/quicketDetailPage-4" >4. 유스케이스 다이어그램</a></li>
+				  <li><a class="dropdown-item" href="/project/quicketDetailPage-5" >5. 개체 관계도(ERD)</a></li>
+				  <li><a class="dropdown-item" href="/project/quicketDetailPage-6" >6. 시퀀스 다이어그램</a></li>
+				  <li><a class="dropdown-item" href="/project/quicketDetailPage-7" >7. 스토리보드</a></li>
+				  <li><a class="dropdown-item" href="/project/quicketDetailPage-8" >8. 테이블 명세서</a></li>
+				  <li><a class="dropdown-item" href="/project/quicketDetailPage-9" >9. 논리적/물리적 모델링</a></li>
+			</ul>
+		</div>
+        </div>
+    </header>
+    <div id = "Main">
+    	<h3>3. 요구사항 명세서</h3><br/>
+	    <table class="t3 table table-bordered">
+	    	<colgroup>
+	    		<col width="20%"/>
+	    		<col width="20%"/>
+	    		<col width="20%"/>
+	    		<col width="20%"/>
+	    	</colgroup>
+			 <tbody>
+			   <tr>
+			      <td>업무 영역</td>
+			      <td colspan="4">예매-관리자</td>
+			   </tr>
+			   <tr>
+			      <td>요구사항ID</td>
+			      <td>QK_TICKET_01</td>
+			      <td>요구사항명</td>
+			      <td colspan="2">예매-관리자</td>
+			   </tr>
+			   <tr>
+			      <td>개요</td>
+			      <td colspan="4">관리자는 예매 정보를 등록, 수정, 삭제할 수 있다.</td>
+			   </tr>
+			   <tr>
+			      <td rowspan="4">요구사항내역</td>
+			      <td >상세설명</td>
+			      <td colspan="3">> 관리자 아이디로 로그인하여 공연 상세페이지에서 공연기간, 공연관, 상영시간, 좌석을 등록한다.
+						<br/>> 관리자는 공연기간, 공연관, 상영시간, 좌석을 수정한다.
+						<br/>> 관리자는 공연기간, 공연관, 상영시간, 좌석을 삭제한다..
+						<br/>> 공연관, 상영 시간, 좌석 데이터는 데이터베이스에 가공 후 등록한다.
+						<br/><br/>- 공연관은 A구역(1회 오전 9시 00분 2회 오후 1시 00분), B구역(1회 오후 3시 00분 2회 오후 6시 00분), C구역(1회 오후 4시 00분, 2회 오후 8시 00분), 좌석은 30석, 40석, 50석,로
+						<br/><br/>공연은 날짜 별 임의적, 좌석은 극장별로 데이터를 가공한다.
+						<br/><br/>ex) 소나무극장은 50석의 객석을 보유하고 있으며 03.02일은 A관 03.03일은 B관 03.04일은 C관을 선택할 수 있다. 
+						</td>
+			   </tr>
+			   <tr>
+			      <td>유형</td>
+			      <td colspan="3"></td>
+			   </tr>
+			   <tr>
+			      <td>중요도</td>
+			      <td>상</td>
+			      <td>난이도</td>
+			      <td>상</td>
+			   </tr>
+			   <tr>
+			      <td>출처</td>
+			      <td></td>
+			      <td>관련부서</td>
+			      <td></td>
+			   </tr>
+			 </tbody> 
+	    </table>
+	    <hr style="border-width:5px;"/>
+	    <table class="t3 table table-bordered">
+	    	<colgroup>
+	    		<col width="20%"/>
+	    		<col width="20%"/>
+	    		<col width="20%"/>
+	    		<col width="20%"/>
+	    	</colgroup>
+			 <tbody>
+			   <tr>
+			      <td>업무 영역</td>
+			      <td colspan="4">예매-사용자</td>
+			   </tr>
+			   <tr>
+			      <td>요구사항ID</td>
+			      <td>QK_TICKET_02</td>
+			      <td>요구사항명</td>
+			      <td colspan="2">예매-사용자</td>
+			   </tr>
+			   <tr>
+			      <td>개요</td>
+			      <td colspan="4">사용자는 예매 정보를 조회, 선택(등록)할 수 있다.</td>
+			   </tr>
+			   <tr>
+			      <td rowspan="4">요구사항내역</td>
+			      <td >상세설명</td>
+			      <td colspan="3">> 사용자는 날짜, 공연관, 좌석을 선택하여 예매한다.
+						<br/>- 날짜는 공연이 진행되는 기간만큼 활성화되어 있고 선택할 수 있다.
+						<br/><br/>> 관리자는 공연기간, 공연관, 상영시간, 좌석을 삭제한다..
+						</td>
+			   </tr>
+			   <tr>
+			      <td>유형</td>
+			      <td colspan="3"></td>
+			   </tr>
+			   <tr>
+			      <td>중요도</td>
+			      <td>상</td>
+			      <td>난이도</td>
+			      <td>상</td>
+			   </tr>
+			   <tr>
+			      <td>출처</td>
+			      <td></td>
+			      <td>관련부서</td>
+			      <td></td>
+			   </tr>
+			 </tbody> 
+	    </table>
+	    <hr style="border-width:5px;"/>
+	    <table class="t3 table table-bordered">
+	    	<colgroup>
+	    		<col width="20%"/>
+	    		<col width="20%"/>
+	    		<col width="20%"/>
+	    		<col width="20%"/>
+	    	</colgroup>
+			 <tbody>
+			   <tr>
+			      <td>업무 영역</td>
+			      <td colspan="4">좌석 선택-관리자</td>
+			   </tr>
+			   <tr>
+			      <td>요구사항ID</td>
+			      <td>QK_SEAT_01</td>
+			      <td>요구사항명</td>
+			      <td colspan="2">좌석 선택-관리자</td>
+			   </tr>
+			   <tr>
+			      <td>개요</td>
+			      <td colspan="4">관리자는 좌석 정보를 등록, 수정, 삭제할 수 있다.</td>
+			   </tr>
+			   <tr>
+			      <td rowspan="4">요구사항내역</td>
+			      <td >상세설명</td>
+			      <td colspan="3">> 메인 화면은 등록된 좌석의 수만큼 좌석이 배치된다.
+						<br/>- 각 좌석은 A~F 열, 1~50번 사이에 좌석 번호가 지정되어 있다.
+						<br/><br/>우측 서브화면에는 선택한 좌석 정보(좌석 번호), 좌석 다시 선택, 좌석 선택 완료 버튼이 있다.
+						</td>
+			   </tr>
+			   <tr>
+			      <td>유형</td>
+			      <td colspan="3"></td>
+			   </tr>
+			   <tr>
+			      <td>중요도</td>
+			      <td>상</td>
+			      <td>난이도</td>
+			      <td>상</td>
+			   </tr>
+			   <tr>
+			      <td>출처</td>
+			      <td></td>
+			      <td>관련부서</td>
+			      <td></td>
+			   </tr>
+			 </tbody> 
+	    </table>
+	    <hr style="border-width:5px;"/>
+	    <table class="t3 table table-bordered">
+	    	<colgroup>
+	    		<col width="20%"/>
+	    		<col width="20%"/>
+	    		<col width="20%"/>
+	    		<col width="20%"/>
+	    	</colgroup>
+			 <tbody>
+			   <tr>
+			      <td>업무 영역</td>
+			      <td colspan="4">좌석 선택-사용자</td>
+			   </tr>
+			   <tr>
+			      <td>요구사항ID</td>
+			      <td>QK_SEAT_02</td>
+			      <td>요구사항명</td>
+			      <td colspan="2">좌석 선택-사용자</td>
+			   </tr>
+			   <tr>
+			      <td>개요</td>
+			      <td colspan="4">사용자는 좌석을 조회, 선택(등록)할 수 있다.</td>
+			   </tr>
+			   <tr>
+			      <td rowspan="4">요구사항내역</td>
+			      <td >상세설명</td>
+			      <td colspan="3">> 사용자는 활성화되어 있는 좌석을 선택할 수 있고, 좌석 선택 및 좌석 선택 완료 버튼을 누르면 결제창으로 넘어가며 좌석의 상태는 비활성화된다.
+						<br/>- 다른 사람이 같은 번호를 클릭하였을 시 이미 예약된 좌석이라는 문구를 띄운다.
+						<br/><br/>> 좌석 선택 시 성인, 아동, 인원 수, 매수를 선택한다.
+						<br/>- 아동의 경우 30% 할인이 적용된다.
+						<br/><br/>> 좌석을 선택하면 선택한 좌석의 좌석번호를 조회한다.
+						<br/><br/>> 좌석 다시 선택을 누르면 선택한 좌석을 초기화한다.
+						</td>
+			   </tr>
+			   <tr>
+			      <td>유형</td>
+			      <td colspan="3"></td>
+			   </tr>
+			   <tr>
+			      <td>중요도</td>
+			      <td>상</td>
+			      <td>난이도</td>
+			      <td>상</td>
+			   </tr>
+			   <tr>
+			      <td>출처</td>
+			      <td></td>
+			      <td>관련부서</td>
+			      <td></td>
+			   </tr>
+			 </tbody> 
+	    </table>
+	    <hr style="border-width:5px;"/>
+	    <table class="t3 table table-bordered">
+	    	<colgroup>
+	    		<col width="20%"/>
+	    		<col width="20%"/>
+	    		<col width="20%"/>
+	    		<col width="20%"/>
+	    	</colgroup>
+			 <tbody>
+			   <tr>
+			      <td>업무 영역</td>
+			      <td colspan="4">결제-사용자</td>
+			   </tr>
+			   <tr>
+			      <td>요구사항ID</td>
+			      <td>QK_PAY_01</td>
+			      <td>요구사항명</td>
+			      <td colspan="2">결제-사용자</td>
+			   </tr>
+			   <tr>
+			      <td>개요</td>
+			      <td colspan="4">사용자는 결제API를 이용하여 결제할 수 있다.</td>
+			   </tr>
+			   <tr>
+			      <td rowspan="4">요구사항내역</td>
+			      <td >상세설명</td>
+			      <td colspan="3">> 쿠폰 선택 단계에서는 쿠폰 리스트를 보여주며 선택 후 결제 란으로 이동한다.
+			      		<br/>- 쿠폰 창과 결제방법 선택창의 우측 서브화면에는 현재 선택한 공연의 정보(포스터, 이름), 좌석 선택 내역(날짜, 시간, 매수, 좌석 정보), 결제내역(티켓 금액, 할인 금액, 쿠폰 할인 금액, 총 금액), 총 결제 금액을 보여준다.
+						<br/><br/>> 결제 단계에서는 결제 방법을 선택할 수 있으며 import API를 사용한다.
+						<br/><br/>> 결제 완료 시 예매 내역 상세 페이지로 이동한다.
+						<br/>- 예매 내역 상세 페이지는 공연 이름, 공연 날짜, 시간, 관, 매수, 좌석번호, 예매 번호)이다.
+						</td>
+			   </tr>
+			   <tr>
+			      <td>유형</td>
+			      <td colspan="3"></td>
+			   </tr>
+			   <tr>
+			      <td>중요도</td>
+			      <td>상</td>
+			      <td>난이도</td>
+			      <td>상</td>
+			   </tr>
+			   <tr>
+			      <td>출처</td>
+			      <td></td>
+			      <td>관련부서</td>
+			      <td></td>
+			   </tr>
+			 </tbody> 
+	    </table>
+	    <hr style="border-width:5px;"/>
+	    <table class="t3 table table-bordered">
+	    	<colgroup>
+	    		<col width="20%"/>
+	    		<col width="20%"/>
+	    		<col width="20%"/>
+	    		<col width="20%"/>
+	    	</colgroup>
+			 <tbody>
+			   <tr>
+			      <td>업무 영역</td>
+			      <td colspan="4">결제-관리자</td>
+			   </tr>
+			   <tr>
+			      <td>요구사항ID</td>
+			      <td>QK_PAY_02</td>
+			      <td>요구사항명</td>
+			      <td colspan="2">결제-관리자</td>
+			   </tr>
+			   <tr>
+			      <td>개요</td>
+			      <td colspan="4">관리자는 사용자의 결제내역을 조회 및 취소할 수 있다.</td>
+			   </tr>
+			   <tr>
+			      <td rowspan="4">요구사항내역</td>
+			      <td >상세설명</td>
+			      <td colspan="3">> 결제 관리 페이지에서 사용자가 결제한 결제 내역을 조회할 수 있다.
+						<br/><br/>> 결제 관리 페이지에서 사용자가 결제한 결제를 취소하면 import api에 토큰 값을 전달하여 환불을 요청해 결제 취소를 할 수 있다.
+						</td>
+			   </tr>
+			   <tr>
+			      <td>유형</td>
+			      <td colspan="3"></td>
+			   </tr>
+			   <tr>
+			      <td>중요도</td>
+			      <td>상</td>
+			      <td>난이도</td>
+			      <td>상</td>
+			   </tr>
+			   <tr>
+			      <td>출처</td>
+			      <td></td>
+			      <td>관련부서</td>
+			      <td></td>
+			   </tr>
+			 </tbody> 
+	    </table>
+    </div>
+    
+    
+</body>
+</html>

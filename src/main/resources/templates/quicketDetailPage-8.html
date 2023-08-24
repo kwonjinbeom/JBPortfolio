@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- css연결 -->   
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+ <!-- css연결 -->   
+	    <link rel = "stylesheet" href ="/include/css/detailPageCss/quicketDetailPage.css">  
+	    <script src="/include/js/detailPageJs/quicketDetailPage.js"></script>
+
+</head>
+		
+		
+		
+    	    
+<body>
+	<!-- 우측아래 로고 -->
+   	<!-- <img id="homeImage" src="/images/common/mainPageImage/homeIcon.png"/> -->
+	
+	
+	<header>
+		<div id="headerBox">
+       	<img class="logo" id="logoSub" src="/images/common/mainPageImage/jinbeomLogoSub.png"/>
+       	<div class="btn-group">
+		    <button id="navBtn" class="btn btn-link dropdown-toggle" type="button" data-toggle="dropdown">
+		    8. 테이블 명세서
+		    <span class="caret"></span>
+		    </button>
+		    <ul class="dropdown-menu">
+				  <li><a class="dropdown-item active" href="/project/quicketDetailPage"aria-current="true">0. 프로젝트 소개</a></li>
+				  <li><a class="dropdown-item" href="/project/quicketDetailPage-1">1. 프로젝트 기획서</a></li>
+				  <li><a class="dropdown-item" href="/project/quicketDetailPage-2" >2. 요구사항 정의서</a></li>
+				  <li><a class="dropdown-item" href="/project/quicketDetailPage-3" >3. 요구사항 명세서</a></li>
+				  <li><a class="dropdown-item" href="/project/quicketDetailPage-4" >4. 유스케이스 다이어그램</a></li>
+				  <li><a class="dropdown-item" href="/project/quicketDetailPage-5" >5. 개체 관계도(ERD)</a></li>
+				  <li><a class="dropdown-item" href="/project/quicketDetailPage-6" >6. 시퀀스 다이어그램</a></li>
+				  <li><a class="dropdown-item" href="/project/quicketDetailPage-7" >7. 스토리보드</a></li>
+				  <li><a class="dropdown-item" href="/project/quicketDetailPage-8" >8. 테이블 명세서</a></li>
+				  <li><a class="dropdown-item" href="/project/quicketDetailPage-9" >9. 논리적/물리적 모델링</a></li>
+			</ul>
+		</div>
+        </div>
+    </header>
+    <div id = "Main">
+    	<h3>8. 테이블 명세서</h3> <br/><br/><br/><br/><br/>
+    	<table class="t8 table table-bordered">
+			 <tbody>
+			   <tr>
+			      <td>테이블명</td>
+			      <td style="font-weight:bold;color:red;">HALL</td>
+			      <td rowspan="2" style="text-align:center;vertical-align:middle;">Table 기술서</td>
+			      <td>작성일</td>
+			      <td>2023.03.15</td>
+			      <td colspan="2">page</td>
+			   </tr>
+			   <tr>
+			      <td>System</td>
+			      <td>QUICKet(퀵켓)</td>
+			      <td>작성자</td>
+			      <td>권진범</td>
+			      <td colspan="2">1</td>
+			   </tr>
+			   <tr>
+			      <td>테이블 설명</td>
+			      <td colspan="6" style="text-align:center;">공연홀 테이블</td>
+			   </tr>
+			   <tr>
+			      <td>No</td>
+			      <td>Attribute</td>
+			      <td>Data Type</td>
+			      <td>NN</td>
+			      <td>Key</td>
+			      <td>Default</td>
+			      <td>Description</td>
+			   </tr>
+			   <tr>
+			      <td>1</td>
+			      <td>HALL_ID</td>
+			      <td>VARCHAR2(100)</td>
+			      <td>N</td>
+			      <td>PK</td>
+			      <td></td>
+			      <td>공연장정보ID</td>
+			   </tr>
+			   <tr>
+			      <td>2</td>
+			      <td>HALL_PLACE</td>
+			      <td>VARCHAR2(10)</td>
+			      <td>N</td>
+			      <td></td>
+			      <td></td>
+			      <td>공연관</td>
+			   </tr>
+			   <tr>
+			      <td>3</td>
+			      <td>HALL_TURN</td>
+			      <td>VARCHAR2(5)</td>
+			      <td>N</td>
+			      <td></td>
+			      <td></td>
+			      <td>상영회차</td>
+			   </tr>
+			   <tr>
+			      <td>4</td>
+			      <td>HALL_REGDATE</td>
+			      <td>DATE</td>
+			      <td></td>
+			      <td></td>
+			      <td>SYSDATE</td>
+			      <td>공연홀 데이터 등록일</td>
+			   </tr>
+			   <tr>
+			      <td>5</td>
+			      <td>HALL_UPDATE</td>
+			      <td>DATE</td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td>공연홀 데이터 수정일</td>
+			   </tr>
+			   <tr>
+			      <td>6</td>
+			      <td>TH_NUM</td>
+			      <td>NUMBER(20)</td>
+			      <td>N</td>
+			      <td>FK</td>
+			      <td></td>
+			      <td>공연장 번호</td>
+			   </tr>
+			   <tr>
+			      <td>7</td>
+			      <td>HALL_TIME</td>
+			      <td>VARCHAR2(100)</td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td>관람 시간</td>
+			   </tr>
+			   <tr>
+			      <td>8</td>
+			      <td>HALL_SEATNUM</td>
+			      <td>NUMBER</td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td>공연관 좌석 수</td>
+			   </tr>
+			   <tr>
+			      <td>9</td>
+			      <td>HALL_DATE</td>
+			      <td>VARCHAR2(1000)</td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td>관람일</td>
+			   </tr>
+			   <tr>
+			      <td>10</td>
+			      <td>HALL_START</td>
+			      <td>VARCHAR2(1000)</td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td>공연관 관람가능 시작날짜</td>
+			   </tr>
+			   <tr>
+			      <td>11</td>
+			      <td>HALL_END</td>
+			      <td>VARCHAR2(1000)</td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td>공연관 관람가능 종료날짜</td>
+			   </tr>
+			 </tbody> 
+	    </table>
+	    <hr style="border-width:5px;"/>
+    	<table class="t8 table table-bordered">
+			 <tbody>
+			   <tr>
+			      <td>테이블명</td>
+			      <td style="font-weight:bold;color:red;">SEAT</td>
+			      <td rowspan="2" style="text-align:center;vertical-align:middle;">Table 기술서</td>
+			      <td>작성일</td>
+			      <td>2023.03.15</td>
+			      <td colspan="2">page</td>
+			   </tr>
+			   <tr>
+			      <td>System</td>
+			      <td>QUICKet(퀵켓)</td>
+			      <td>작성자</td>
+			      <td>권진범</td>
+			      <td colspan="2">2</td>
+			   </tr>
+			   <tr>
+			      <td>테이블 설명</td>
+			      <td colspan="6" style="text-align:center;">좌석 테이블</td>
+			   </tr>
+			   <tr>
+			      <td>No</td>
+			      <td>Attribute</td>
+			      <td>Data Type</td>
+			      <td>NN</td>
+			      <td>Key</td>
+			      <td>Default</td>
+			      <td>Description</td>
+			   </tr>
+			   <tr>
+			      <td>1</td>
+			      <td>SEAT_NUM</td>
+			      <td>NUMBER</td>
+			      <td>N</td>
+			      <td>PK</td>
+			      <td></td>
+			      <td>좌석번호</td>
+			   </tr>
+			   <tr>
+			      <td>2</td>
+			      <td>HALL_ID</td>
+			      <td>VARCHAR2(100)</td>
+			      <td>PK</td>
+			      <td></td>
+			      <td></td>
+			      <td>공연장정보ID</td>
+			   </tr>
+			   <tr>
+			      <td>3</td>
+			      <td>SEAT_STATUS</td>
+			      <td>NUMBER</td>
+			      <td>N</td>
+			      <td></td>
+			      <td></td>
+			      <td>좌석 활성/비활성화</td>
+			   </tr>
+			   <tr>
+			      <td>4</td>
+			      <td>SEAT_AGE</td>
+			      <td>VARCHAR2(20)</td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td>성인/아동</td>
+			   </tr>
+			   <tr>
+			      <td>5</td>
+			      <td>SEAT_REGDATE</td>
+			      <td>DATE</td>
+			      <td></td>
+			      <td></td>
+			      <td>SYSDATE</td>
+			      <td>좌석 데이터 등록일</td>
+			   </tr>
+			   <tr>
+			      <td>6</td>
+			      <td>SEAT_UPDATE</td>
+			      <td>DATE</td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td>좌석 데이터 수정일</td>
+			   </tr>
+			   <tr>
+			      <td>7</td>
+			      <td>SEAT_NAME</td>
+			      <td>VARCHAR2(200)</td>
+			      <td>N</td>
+			      <td></td>
+			      <td></td>
+			      <td>좌석 이름</td>
+			   </tr>
+			 </tbody> 
+	    </table>
+	    <hr style="border-width:5px;"/>
+	    <table class="t8 table table-bordered">
+			 <tbody>
+			   <tr>
+			      <td>테이블명</td>
+			      <td style="font-weight:bold;color:red;">PAY</td>
+			      <td rowspan="2" style="text-align:center;vertical-align:middle;">Table 기술서</td>
+			      <td>작성일</td>
+			      <td>2023.03.15</td>
+			      <td colspan="2">page</td>
+			   </tr>
+			   <tr>
+			      <td>System</td>
+			      <td>QUICKet(퀵켓)</td>
+			      <td>작성자</td>
+			      <td>권진범</td>
+			      <td colspan="2">3</td>
+			   </tr>
+			   <tr>
+			      <td>테이블 설명</td>
+			      <td colspan="6" style="text-align:center;">결제 테이블</td>
+			   </tr>
+			   <tr>
+			      <td>No</td>
+			      <td>Attribute</td>
+			      <td>Data Type</td>
+			      <td>NN</td>
+			      <td>Key</td>
+			      <td>Default</td>
+			      <td>Description</td>
+			   </tr>
+			   <tr>
+			      <td>1</td>
+			      <td>PAY_NUM</td>
+			      <td>NUMBER</td>
+			      <td>N</td>
+			      <td>PK</td>
+			      <td></td>
+			      <td>예매번호</td>
+			   </tr>
+			   <tr>
+			      <td>2</td>
+			      <td>PAY_NAME</td>
+			      <td>VARCAHR2(20)</td>
+			      <td>N</td>
+			      <td></td>
+			      <td></td>
+			      <td>결제자 이름</td>
+			   </tr>
+			   <tr>
+			      <td>3</td>
+			      <td>PAY_PHONE</td>
+			      <td>VARCAHR2(30)</td>
+			      <td>N</td>
+			      <td></td>
+			      <td></td>
+			      <td>결제자 전화번호</td>
+			   </tr>
+			   <tr>
+			      <td>4</td>
+			      <td>PAY_EMAIL</td>
+			      <td>VARCHAR2(200)</td>
+			      <td></td>
+			      <td></td>
+			      <td>SYSDATE</td>
+			      <td>결제자 이메일</td>
+			   </tr>
+			   <tr>
+			      <td>5</td>
+			      <td>PAY_AMOUNT</td>
+			      <td>NUMBER</td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td>결제금액</td>
+			   </tr>
+			   <tr>
+			      <td>6</td>
+			      <td>PAY_STATUS</td>
+			      <td>VARCHAR(20)</td>
+			      <td>N</td>
+			      <td></td>
+			      <td></td>
+			      <td>결제상태</td>
+			   </tr>
+			   <tr>
+			      <td>7</td>
+			      <td>PAY_REGDATE</td>
+			      <td>DATE</td>
+			      <td></td>
+			      <td></td>
+			      <td>SYSDATE</td>
+			      <td>결제 데이터 등록일</td>
+			   </tr>
+			   <tr>
+			      <td>8</td>
+			      <td>PAY_UPDATE</td>
+			      <td>DATE</td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td>결제 데이터 수정일</td>
+			   </tr>
+			   <tr>
+			      <td>9</td>
+			      <td>U_ID</td>
+			      <td>VARCHAR2(15)</td>
+			      <td>N</td>
+			      <td>FK</td>
+			      <td></td>
+			      <td>결제자 아이디</td>
+			   </tr>
+			   <tr>
+			      <td>10</td>
+			      <td>IMP_UID</td>
+			      <td>VARCHAR2(200)</td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td>api 결제번호</td>
+			   </tr>
+			   <tr>
+			      <td>11</td>
+			      <td>TOKEN</td>
+			      <td>VARCHAR2(200)</td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+			      <td>api 결제토큰</td>
+			   </tr>
+			 </tbody> 
+	    </table>
+	    <hr style="border-width:5px;"/>
+	    <table class="t8 table table-bordered">
+			 <tbody>
+			   <tr>
+			      <td>테이블명</td>
+			      <td style="font-weight:bold;color:red;">TICKET</td>
+			      <td rowspan="2" style="text-align:center;vertical-align:middle;">Table 기술서</td>
+			      <td>작성일</td>
+			      <td>2023.03.15</td>
+			      <td colspan="2">page</td>
+			   </tr>
+			   <tr>
+			      <td>System</td>
+			      <td>QUICKet(퀵켓)</td>
+			      <td>작성자</td>
+			      <td>권진범</td>
+			      <td colspan="2">4</td>
+			   </tr>
+			   <tr>
+			      <td>테이블 설명</td>
+			      <td colspan="6" style="text-align:center;">예매 테이블</td>
+			   </tr>
+			   <tr>
+			      <td>No</td>
+			      <td>Attribute</td>
+			      <td>Data Type</td>
+			      <td>NN</td>
+			      <td>Key</td>
+			      <td>Default</td>
+			      <td>Description</td>
+			   </tr>
+			   <tr>
+			      <td>1</td>
+			      <td>PAY_NUM</td>
+			      <td>NUMBER</td>
+			      <td>N</td>
+			      <td>PK</td>
+			      <td></td>
+			      <td>예매번호</td>
+			   </tr>
+			   <tr>
+			      <td>2</td>
+			      <td>TI_DATE</td>
+			      <td>DATE</td>
+			      <td>N</td>
+			      <td>PK</td>
+			      <td></td>
+			      <td>예매한 시간/날짜</td>
+			   </tr>
+			   <tr>
+			      <td>3</td>
+			      <td>TI_STATUS</td>
+			      <td>VARCHAR2(20)</td>
+			      <td>N</td>
+			      <td></td>
+			      <td></td>
+			      <td>예매상태</td>
+			   </tr>
+			   <tr>
+			      <td>4</td>
+			      <td>U_ID</td>
+			      <td>VARCHAR2(15)</td>
+			      <td>N</td>
+			      <td>FK</td>
+			      <td></td>
+			      <td>회원 아이디</td>
+			   </tr>
+			   <tr>
+			      <td>5</td>
+			      <td>TI_REGDATE</td>
+			      <td>DATE</td>
+			      <td></td>
+			      <td></td>
+			      <td>SYSDATE</td>
+			      <td>예매 데이터 등록일</td>
+			   </tr>
+			   <tr>
+			      <td>6</td>
+			      <td>TI_UPDATE</td>
+			      <td>DATE</td>
+			      <td>N</td>
+			      <td></td>
+			      <td></td>
+			      <td>예매 데이터 수정일</td>
+			   </tr>
+			   <tr>
+			      <td>7</td>
+			      <td>TI_COUPON</td>
+			      <td>VARCHAR2(10)</td>
+			      <td></td>
+			      <td></td>
+			      <td>SYSDATE</td>
+			      <td>사용 쿠폰 번호</td>
+			   </tr>
+			 </tbody> 
+	    </table>
+	    <hr style="border-width:5px;"/>
+	    <table class="t8 table table-bordered">
+			 <tbody>
+			   <tr>
+			      <td>테이블명</td>
+			      <td style="font-weight:bold;color:red;">TICKET_SEAT</td>
+			      <td rowspan="2" style="text-align:center;vertical-align:middle;">Table 기술서</td>
+			      <td>작성일</td>
+			      <td>2023.03.15</td>
+			      <td colspan="2">page</td>
+			   </tr>
+			   <tr>
+			      <td>System</td>
+			      <td>QUICKet(퀵켓)</td>
+			      <td>작성자</td>
+			      <td>권진범</td>
+			      <td colspan="2">5</td>
+			   </tr>
+			   <tr>
+			      <td>테이블 설명</td>
+			      <td colspan="6" style="text-align:center;">예매좌석 테이블</td>
+			   </tr>
+			   <tr>
+			      <td>No</td>
+			      <td>Attribute</td>
+			      <td>Data Type</td>
+			      <td>NN</td>
+			      <td>Key</td>
+			      <td>Default</td>
+			      <td>Description</td>
+			   </tr>
+			   <tr>
+			      <td>1</td>
+			      <td>PAY_NUM</td>
+			      <td>NUMBER</td>
+			      <td>N</td>
+			      <td>FK</td>
+			      <td></td>
+			      <td>예매번호</td>
+			   </tr>
+			   <tr>
+			      <td>2</td>
+			      <td>SEAT_NUM</td>
+			      <td>NUMBER</td>
+			      <td>N</td>
+			      <td>PK</td>
+			      <td></td>
+			      <td>좌석번호</td>
+			   </tr>
+			   <tr>
+			      <td>3</td>
+			      <td>HALL_ID</td>
+			      <td>VARCHAR2(100)</td>
+			      <td>N</td>
+			      <td>FK</td>
+			      <td></td>
+			      <td>공연장정보ID</td>
+			   </tr>
+			 </tbody> 
+	    </table>
+    </div>
+    
+    
+</body>
+</html>

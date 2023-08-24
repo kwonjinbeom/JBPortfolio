@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- css연결 -->   
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+ <!-- css연결 -->   
+	    <link rel = "stylesheet" href ="/include/css/detailPageCss/quicketDetailPage.css">  
+	    <script src="/include/js/detailPageJs/quicketDetailPage.js"></script>
+
+</head>
+		
+		
+		
+    	    
+<body>
+	<!-- 우측아래 로고 -->
+   	<!-- <img id="homeImage" src="/images/common/mainPageImage/homeIcon.png"/> -->
+	
+	
+	<header>
+		<div id="headerBox">
+       	<img class="logo" id="logoSub" src="/images/common/mainPageImage/jinbeomLogoSub.png"/>
+       	<div class="btn-group">
+		    <button id="navBtn" class="btn btn-link dropdown-toggle" type="button" data-toggle="dropdown">
+		    1. 프로젝트 기획서
+		    <span class="caret"></span>
+		    </button>
+		    <ul class="dropdown-menu">
+				  <li><a class="dropdown-item active" href="/project/quicketDetailPage"aria-current="true">0. 프로젝트 소개</a></li>
+				  <li><a class="dropdown-item" href="/project/quicketDetailPage-1">1. 프로젝트 기획서</a></li>
+				  <li><a class="dropdown-item" href="/project/quicketDetailPage-2" >2. 요구사항 정의서</a></li>
+				  <li><a class="dropdown-item" href="/project/quicketDetailPage-3" >3. 요구사항 명세서</a></li>
+				  <li><a class="dropdown-item" href="/project/quicketDetailPage-4" >4. 유스케이스 다이어그램</a></li>
+				  <li><a class="dropdown-item" href="/project/quicketDetailPage-5" >5. 개체 관계도(ERD)</a></li>
+				  <li><a class="dropdown-item" href="/project/quicketDetailPage-6" >6. 시퀀스 다이어그램</a></li>
+				  <li><a class="dropdown-item" href="/project/quicketDetailPage-7" >7. 스토리보드</a></li>
+				  <li><a class="dropdown-item" href="/project/quicketDetailPage-8" >8. 테이블 명세서</a></li>
+				  <li><a class="dropdown-item" href="/project/quicketDetailPage-9" >9. 논리적/물리적 모델링</a></li>
+			</ul>
+		</div>
+        </div>
+    </header>
+    <div id = "Main">
+    	<h3>1. 프로젝트 기획서</h3><br/>
+	    <table class="t1 table table-bordered">
+	    	<colgroup>
+	    		<col width="15%"/>
+	    		<col width="80%"/>
+	    	</colgroup>
+	    	<thead>
+	    		<tr>
+				   <th>제목</th>
+				   <th>내용</th>
+			   	<tr>
+			</thead>
+			 <tbody>
+			   <tr>
+			      <td>기획 의도</td>
+			      <td>포스트 코로나 시대로 들어서며 한동안 침체기를 겪었던 공연시장은 성장세로 진입하고 있다. 
+			      	<br/>
+			      	<br/>이전부터 공연문화는 '이선좌(이미 선점된 좌석입니다)'라는 신조어를 남길만큼 티켓팅 싸움이 치열하고 소비자들은 기존 공연예매사이트의 서버 및 관리 문제로 불만을 가지고 있다.<br/>
+					<br/>이에 본 프로젝트는 사용자에게 편리한 예매사이트를 서비스하는 것을 목표로 깔끔한 UI와 검색기능을 제공하고자 한다.
+					</td>
+			   </tr>
+			   <tr>
+			      <td>개발환경</td>
+			      <td>	- 개발 OS : Windows NT
+						<br/>- DBMS : ORACLE 
+						<br/>- JDK 버전 : jdk-17
+						<br/>- 개발도구 : STS, SQL Developer
+						<br/>- WAS : Apache Tomcat 9.0
+						<br/>- 빌드 관리 : Maven
+						<br/>- 개발 언어 : Java, HTML5, CSS, JavaScript, jQuery, JSP, XML, MyBatis, Spring boot 등
+						<br/>- 형상 관리 : GitHub, Sourcetree
+						<br/>- API : KakaoMAP API, KakaoPAY API, import API
+						<br/>- 테스트 : Junit v4.12
+						<br/>- View Tool : Chrome, 익스플로러
+
+					</td>
+			   </tr>
+			   <tr>
+			      <td>요구사항</td>
+			      <td>	[예매 관리] - 권진범
+						<br/>사용자는 공연 별 예매창을 통해 공연 예매를 할 수 있다.
+						<br/>관리자는 공연 기간, 공연관, 상영시간, 좌석에 대한 예매 정보를 등록할 수 있다. 결제 내역을 확인할 수 있으며 결제 내역으로 월간, 주간 매출과 순이익, 공연별 매출 현황을 그래프로 확인할 수 있다.
+						<br/>
+						<br/>[좌석 관리] - 권진범
+						<br/>사용자는 관리자가 등록한 정보를 바탕으로 활성화된 좌석을 선택할 수 있다.
+						<br/>관리자는 공연의 좌석, 좌석번호, 티켓 가격, 좌석 선택 여부에 대한 좌석 정보를 등록할 수 있다.
+						<br/>
+						<br/>[결제 관리] - 권진범
+						<br/>사용자는 좌석을 선택한 후, 선택된 좌석의 가격에 맞게 결제 API(kakao pay, import)를 통해 결제를 할 수 있다.
+					</td>
+			   </tr>
+			 </tbody> 
+	    </table>
+    </div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- css연결 -->   
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+ <!-- css연결 -->   
+	    <link rel = "stylesheet" href ="/include/css/detailPageCss/quicketDetailPage.css">  
+	    <script src="/include/js/detailPageJs/quicketDetailPage.js"></script>
+
+</head>
+		
+		
+		
+    	    
+<body>
+	<!-- 우측아래 로고 -->
+   	<!-- <img id="homeImage" src="/images/common/mainPageImage/homeIcon.png"/> -->
+	
+	
+	<header>
+		<div id="headerBox">
+       	<img class="logo" id="logoSub" src="/images/common/mainPageImage/jinbeomLogoSub.png"/>
+       	<div class="btn-group">
+		    <button id="navBtn" class="btn btn-link dropdown-toggle" type="button" data-toggle="dropdown">
+		    2. 요구사항 정의서
+		    <span class="caret"></span>
+		    </button>
+		    <ul class="dropdown-menu">
+				  <li><a class="dropdown-item active" href="/project/quicketDetailPage"aria-current="true">0. 프로젝트 소개</a></li>
+				  <li><a class="dropdown-item" href="/project/quicketDetailPage-1">1. 프로젝트 기획서</a></li>
+				  <li><a class="dropdown-item" href="/project/quicketDetailPage-2" >2. 요구사항 정의서</a></li>
+				  <li><a class="dropdown-item" href="/project/quicketDetailPage-3" >3. 요구사항 명세서</a></li>
+				  <li><a class="dropdown-item" href="/project/quicketDetailPage-4" >4. 유스케이스 다이어그램</a></li>
+				  <li><a class="dropdown-item" href="/project/quicketDetailPage-5" >5. 개체 관계도(ERD)</a></li>
+				  <li><a class="dropdown-item" href="/project/quicketDetailPage-6" >6. 시퀀스 다이어그램</a></li>
+				  <li><a class="dropdown-item" href="/project/quicketDetailPage-7" >7. 스토리보드</a></li>
+				  <li><a class="dropdown-item" href="/project/quicketDetailPage-8" >8. 테이블 명세서</a></li>
+				  <li><a class="dropdown-item" href="/project/quicketDetailPage-9" >9. 논리적/물리적 모델링</a></li>
+			</ul>
+		</div>
+        </div>
+    </header>
+    <div id = "Main">
+    	<h3>2. 요구사항 정의서</h3><br/>
+	    <table class="table table-bordered">
+	    	<colgroup>
+	    		<col width="20%"/>
+	    		<col width="40%"/>
+	    		<col width="20%"/>
+	    		<col width="20%"/>
+	    	</colgroup>
+	    	<thead>
+	    		<tr>
+				   <th>업무</th>
+				   <th>요구사항</th>
+				   <th>ID</th>
+				   <th>비고</th>
+			   	<tr>
+			</thead>
+			 <tbody>
+			   <tr>
+			      <td rowspan="2">예매</td>
+			      <td>관리자는 예매 정보를 등록, 수정, 삭제할 수 있다.</td>
+			      <td>QK_TICKET_01</td>
+			      <td>관리자</td>
+			   </tr>
+			   <tr>
+			      <td>사용자는 예매 정보를 조회, 선택(등록)할 수 있다.</td>
+			      <td>QK_TICKET_02</td>
+			      <td>사용자</td>
+			   </tr>
+			   <tr>
+			      <td rowspan="2">좌석 선택</td>
+			      <td>관리자는 좌석 정보를 등록, 수정, 삭제할 수 있다.</td>
+			      <td>QK_SEAT_01</td>
+			      <td>관리자</td>
+			   </tr>
+			   <tr>
+			      <td>사용자는 좌석을 조회, 선택(등록)할 수 있다.</td>
+			      <td>QK_SEAT_02</td>
+			      <td>사용자</td>
+			   </tr>
+			   <tr>
+			      <td rowspan="2">결제</td>
+			      <td>사용자는 결제API를 이용하여 결제할 수 있다. </td>
+			      <td>QK_PAY_01</td>
+			      <td>사용자</td>
+			   </tr>
+			   <tr>
+			      <td>관리자는 사용자의 결제내역을 조회 및 취소할 수 있다.</td>
+			      <td>QK_PAY_02</td>
+			      <td>관리자</td>
+			   </tr>
+			 </tbody> 
+	    </table>
+    </div>
+    
+    
+</body>
+</html>
