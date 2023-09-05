@@ -58,10 +58,12 @@ $(function(){
 	$(window).scroll(function(){
 	    let scrollHeight = $(this).scrollTop();
 	    if((scrollHeight >= navClickArray[0]+300) && (scrollHeight < navClickArray[2]-15)){
-				$("#clickHelp").show();
-			}else{
-				$("#clickHelp").hide();
-			}
+			$("#clickHelp").show();
+		}else if((scrollHeight >= navClickArray[4]-10) && (scrollHeight < etcArray[1]-15)){
+			$("#clickHelp").show();
+		}else{
+			$("#clickHelp").hide();
+		}
 	    if(scrollHeight != 0){
 	        $("body").removeClass('scroll_hidden');
 	        $("body").removeClass('scroll_hidden::-webkit-scrollbar');
